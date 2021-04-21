@@ -1,0 +1,77 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+    font-style: light;
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    height: 80px;
+    float: right;
+    width: 100%;
+    z-index: 1;
+}
+.header__logo {
+    background: #fff;
+    float: left;
+    padding: 35px 80px;
+    margin-right: 300px;
+}
+
+.header__menu {
+    float: left;
+    padding: 35px 80px;
+}
+
+.header__menu nav ul{
+    display: flex;
+}
+.header__menu nav ul a{
+    color: #000;
+    padding: 0px 70px 0px 0px;
+}
+.mainscreen__image {
+    float: left;
+    padding-right: 50px;
+}
+
+.mainscreen__title {
+    float: left;
+    margin-top: 75px;
+    font-size: 96px;
+    font-family: "Roboto";
+    font-style: italic;
+
+}
+.mainscreen__title span {
+    margin-top: -70px;
+    margin-left: 120px;
+    display: block;
+}
+.mainscreen__ofers {
+    float: left;
+    width: 50%;
+    margin-top: 75px;
+}
+.mainscreen__item {
+    float: left;
+    width: 50%;
+    font-size: 22px;
+}
+.right {
+    margin-right: 100px;
+    text-align: right;
+}
