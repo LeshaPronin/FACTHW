@@ -1,77 +1,78 @@
 html {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
+
 body {
-    padding: 0;
     margin: 0;
-    font-family: "Roboto";
-    font-style: light;
+    padding: 0;
 }
+
 a {
-    list-style-type: none;
     text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-}
-header {
-    height: 80px;
-    float: right;
-    width: 100%;
-    z-index: 1;
-}
-.header__logo {
-    background: #fff;
-    float: left;
-    padding: 35px 80px;
-    margin-right: 300px;
-}
-
-.header__menu {
-    float: left;
-    padding: 35px 80px;
-}
-
-.header__menu nav ul{
-    display: flex;
-}
-.header__menu nav ul a{
-    color: #000;
-    padding: 0px 70px 0px 0px;
-}
-.mainscreen__image {
-    float: left;
-    padding-right: 50px;
-}
-
-.mainscreen__title {
-    float: left;
-    margin-top: 75px;
-    font-size: 96px;
-    font-family: "Roboto";
-    font-style: italic;
-
-}
-.mainscreen__title span {
-    margin-top: -70px;
-    margin-left: 120px;
+    color: black;
+    transition: .2s;
     display: block;
 }
-.mainscreen__ofers {
-    float: left;
-    width: 50%;
-    margin-top: 75px;
+
+tr, td {
+    border: 1px solid #000;
 }
-.mainscreen__item {
-    float: left;
-    width: 50%;
-    font-size: 22px;
+.main {
+    font-size: 24px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
 }
+.child {
+    padding: 0px 5px 0 5px;
+}
+.child td{
+    height: 20px;
+    border: 0px;
+}
+
+.point {
+    font-size: 34px;
+}
+
+.des {
+    font-size: 14px;
+}
+
 .right {
-    margin-right: 100px;
     text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+td {
+    width: 120px;
+    background: #FEEFC4;
+}
+
+.green {
+    background: #70C639;
+}
+
+.red {
+    background: #E93A73;
+}
+
+.blue {
+    background: #27D5EF;
+}
+
+.yellow {
+    background: #FFF046;
+}
+
+
+a:hover {
+    color: #42b2ff;
+    transition: .2s;
+    padding: 5px;
 }
