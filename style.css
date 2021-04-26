@@ -6,73 +6,20 @@ html {
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    transition: .2s;
-    display: block;
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-tr, td {
-    border: 1px solid #000;
-}
-.main {
-    font-size: 24px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-}
-.child {
-    padding: 0px 5px 0 5px;
-}
-.child td{
-    height: 20px;
-    border: 0px;
-}
-
-.point {
-    font-size: 34px;
-}
-
-.des {
-    font-size: 14px;
-}
-
-.right {
-    text-align: right;
-}
-
-.left {
-    text-align: left;
-}
-
-td {
-    width: 120px;
-    background: #FEEFC4;
-}
-
-.green {
-    background: #70C639;
-}
-
-.red {
-    background: #E93A73;
-}
-
-.blue {
-    background: #27D5EF;
-}
-
-.yellow {
-    background: #FFF046;
-}
-
-
-a:hover {
-    color: #42b2ff;
-    transition: .2s;
-    padding: 5px;
+.container div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #995aff;
+    margin: 50px;
 }
