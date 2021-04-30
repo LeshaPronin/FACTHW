@@ -1,8 +1,17 @@
 .container {
-    padding: 25px;
+    padding: 0px 25px 25px 25px;
     background: #a7d6ff;
     border-radius: 20px;
-    color: #fff;
-    font-size: 28px;
+    color: #1a1a1a;
+    font-size: 18px;
     font-family: Roboto;
+}
+
+span {
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    background: #90c4f1;
+    padding: 10px;
+    display: block;
 }
