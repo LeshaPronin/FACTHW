@@ -10,36 +10,51 @@
 </head>
 <body>
 <div class="container">
-    <span>Задание 1 <br></span>
-    <?php
-    $chislo=5;
-    while ($chislo>=5 and $chislo<=13) {
-        echo $chislo.'<br>';
-        $chislo++;
-    }
-    ?>
-    <span>Задание 2 (Цикл While) <br></span>
-    <?php
-    $num=1000;
-    while ($num>50) {
-        echo $num.'<br>';
-        $num=$num/2;
-    }
-    ?>
-    <span>Задание 2 (Цикл For) <br></span>
-    <?php
-    for ($numfor=1000; $numfor>50;$numfor=$numfor/2) {
-        echo $numfor.'<br>';
-    }
-    ?>
-    <span>Задание 3 <br></span>
-
-    <?php
-    $array = array("0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10", "0, 1, 2, 3, 4, 5, 6, 7, 8, 9", "0, 1, 2, 3, 4, 5, 6, 7, 8", "0, 1, 2, 3, 4, 5, 6, 7", "0, 1, 2, 3, 4, 5, 6", "0, 1, 2, 3, 4, 5", "0, 1, 2, 3, 4", "0, 1, 2, 3", "0, 1, 2", "0, 1", "0");
-        for ($i=0; $i<=10; $i++) {
-            echo $array[$i].'<br>';
+    <span>Задание 1</span>
+  <?php
+    $arr = [rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100)];
+    for ($i=0; $i<12; $i++) {
+        if ($arr[$i] % 2 == 0) {
+            echo "<b>".$arr[$i]."</b>"."<br>";
         }
+        else{
+            echo $arr[$i]."<br>";
+        }
+    }
+  ?>
+    <span>Задание 2</span>
+    <?php
+    $strokearr = array( array("Базовые", "Принципы", "ООП"),
+                        array("Абстракция", "Полиморфизм", "Наследование"),
+                        array("Инкапсуляция", "Делегация", "Агрегация"),
+                        );
+    for ($s=0; $s<4; $s++) {
+        for ($q=0; $q<4; $q++) {
+            if(mb_substr($strokearr[$s][$q], 0, 1) == "А") {
+                echo $strokearr[$s][$q]."<br>";
+            }
+        }
+    }
     ?>
+    <span>Задание 3</span>
+    <?php
+    $numarr = array( array(rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100)),
+                    array(rand(0, 100), rand(0, 100), rand(0, 100)),
+                    array(rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100)),
+                    array(rand(0, 100)),
+                    array(rand(0, 100), rand(0, 100))
+    );
+    echo "Количество элементов в массиве"."<br>";
+    $h=1;
+    $summassive=0;
+    for ($v=0; $v<5; $v++) {
+            echo $h.". строка в массиве ".count($numarr[$v])."<br>";
+            $summassive=$summassive+count($numarr[$v]);
+    $h++;
+    }
+    echo "Всего элементов в массиве - ".$summassive;
+    ?>
+
 </div>
 </body>
 </html>
