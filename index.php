@@ -10,51 +10,117 @@
 </head>
 <body>
 <div class="container">
-    <span>Задание 1</span>
-  <?php
-    $arr = [rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100)];
-    for ($i=0; $i<12; $i++) {
-        if ($arr[$i] % 2 == 0) {
-            echo "<b>".$arr[$i]."</b>"."<br>";
-        }
-        else{
-            echo $arr[$i]."<br>";
-        }
-    }
-  ?>
-    <span>Задание 2</span>
+    <span>Задача 1</span>
     <?php
-    $strokearr = array( array("Базовые", "Принципы", "ООП"),
-                        array("Абстракция", "Полиморфизм", "Наследование"),
-                        array("Инкапсуляция", "Делегация", "Агрегация"),
-                        );
-    for ($s=0; $s<4; $s++) {
-        for ($q=0; $q<4; $q++) {
-            if(mb_substr($strokearr[$s][$q], 0, 1) == "А") {
-                echo $strokearr[$s][$q]."<br>";
-            }
+        $str1 = "fact";
+        $arr1 = str_split($str1, 1);
+        $arr1[0] = mb_strtoupper($arr1[0]);
+        foreach ($arr1 as $key1 => $value1){
+            echo $arr1[$key1];
         }
-    }
-    ?>
-    <span>Задание 3</span>
-    <?php
-    $numarr = array( array(rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100)),
-                    array(rand(0, 100), rand(0, 100), rand(0, 100)),
-                    array(rand(0, 100), rand(0, 100), rand(0, 100), rand(0, 100)),
-                    array(rand(0, 100)),
-                    array(rand(0, 100), rand(0, 100))
-    );
-    echo "Количество элементов в массиве"."<br>";
-    $h=1;
-    $summassive=0;
-    for ($v=0; $v<5; $v++) {
-            echo $h.". строка в массиве ".count($numarr[$v])."<br>";
-            $summassive=$summassive+count($numarr[$v]);
-    $h++;
-    }
-    echo "Всего элементов в массиве - ".$summassive;
     ?>
 
+    <span>Задача 2</span>
+
+    <?php
+        $str2 = "Фамилия Имя Отчество";
+        $arr2 = explode (' ', $str2);
+        $arr2[2] = "";
+        for ($i2=1; $i2>-1; $i2=$i2-1) {
+            echo $arr2[$i2]." ";
+        }
+    ?>
+
+    <span>Задача 3</span>
+
+    <?php
+        $str3 = "Привет Мир";
+        $arr3 = explode(' ', $str3);
+        for ($i3=0; $i3<2; $i3++) {
+            $arr4[$i3] = str_split($arr3[$i3], 2);
+        }
+        $let=0;
+        for ($i4=0; $i4<2; $i4++) {
+            for ($i5=0; $i5<20; $i5++) {
+                if ($arr4[$i4][$i5]=="и" or $arr4[$i4][$i5] == "И") {
+                    $let++;
+                    echo "Количество букв И равна ".$let."<br>";
+                }
+            }
+        }
+    ?>
+
+    <span>Задача 4</span>
+    <?php
+        $strlp = "html css php";
+        $arrlp = explode(' ', $strlp);
+
+        foreach ($arrlp as $key => $value){
+            echo "Слово ".$arrlp[$key]."<br>";
+        }
+    ?>
+
+    <span>Задача 5</span>
+    <?php
+        $strpng = "image.png";
+
+        if (mb_substr($strpng, -4, 4) == ".png") {
+            echo "Да";
+        }
+        else {
+            echo "Нет, дай мне .png";
+        }
+    ?>
+
+    <span>Домашнее задание</span>
+    <span>Задание 1</span>
+    <?php
+        $str = "Kakoetoslovo";
+        $dots = "...";
+        $arrstr = str_split($str);
+        if (count($arrstr)>5) {
+            for ($istr=0; $istr<3; $istr++) {
+                $arrstr[$istr] = " ";
+            }
+            $str = implode($arrstr);
+            echo $str.$dots;
+        }
+        else {
+            echo $str;
+        }
+
+    ?>
+
+    <span>Задание 2</span>
+
+    <?php
+        $stroke = "abgregbatcor";
+        echo str_replace(array("a", "b", "c"),
+                        array("1", "2", "3"), $stroke);
+    ?>
+
+    <span>Задание 3</span>
+
+    <?php
+        $strokeabc = "abc abc abc";
+        echo strrpos($strokeabc, 'b');
+    ?>
+
+    <span>Задание 4</span>
+
+    <?php
+        $strokehtml = "html css php";
+        $arrhtml = explode(' ', $strokehtml);
+        print_r($arrhtml);
+    ?>
+    <span>Задание 5</span>
+
+    <?php
+        $date1 = date_create("10-02-2015");
+        $date2 = date_create("11-03-2021");
+        $result = date_diff($date1,$date2);
+        echo "Количество дней между датами -". $result->days;
+    ?>
 </div>
 </body>
 </html>
