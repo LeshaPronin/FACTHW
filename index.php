@@ -10,118 +10,97 @@
 </head>
 <body>
 <div class="container">
-    <span>Задача 1</span>
-    <?php
-        $str1 = "fact";
-        $arr1 = str_split($str1, 1);
-        $arr1[0] = mb_strtoupper($arr1[0]);
-        foreach ($arr1 as $key1 => $value1){
-            echo $arr1[$key1];
-        }
-    ?>
-
-    <span>Задача 2</span>
-
-    <?php
-        $str2 = "Фамилия Имя Отчество";
-        $arr2 = explode (' ', $str2);
-        $arr2[2] = "";
-        for ($i2=1; $i2>-1; $i2=$i2-1) {
-            echo $arr2[$i2]." ";
-        }
-    ?>
-
-    <span>Задача 3</span>
-
-    <?php
-        $str3 = "Привет Мир";
-        $arr3 = explode(' ', $str3);
-        for ($i3=0; $i3<2; $i3++) {
-            $arr4[$i3] = str_split($arr3[$i3], 2);
-        }
-        $let=0;
-        for ($i4=0; $i4<2; $i4++) {
-            for ($i5=0; $i5<20; $i5++) {
-                if ($arr4[$i4][$i5]=="и" or $arr4[$i4][$i5] == "И") {
-                    $let++;
-                    echo "Количество букв И равна ".$let."<br>";
-                }
-            }
-        }
-    ?>
-
-    <span>Задача 4</span>
-    <?php
-        $strlp = "html css php";
-        $arrlp = explode(' ', $strlp);
-
-        foreach ($arrlp as $key => $value){
-            echo "Слово ".$arrlp[$key]."<br>";
-        }
-    ?>
-
-    <span>Задача 5</span>
-    <?php
-        $strpng = "image.png";
-
-        if (mb_substr($strpng, -4, 4) == ".png") {
-            echo "Да";
-        }
-        else {
-            echo "Нет, дай мне .png";
-        }
-    ?>
-
-    <span>Домашнее задание</span>
     <span>Задание 1</span>
+
     <?php
-        $str = "Kakoetoslovo";
-        $dots = "...";
-        $arrstr = str_split($str);
-        if (count($arrstr)>5) {
-            for ($istr=0; $istr<3; $istr++) {
-                $arrstr[$istr] = " ";
+        function fun1($arr1) {
+            foreach ($arr1 as $key1 => $value1) {
+                $arr1[$key1] = rand(1, 100);
+                echo $arr1[$key1]."<br>";
             }
-            $str = implode($arrstr);
-            echo $str.$dots;
-        }
-        else {
-            echo $str;
+
+            return ($arr1);
         }
 
+        $arr1 = array("1", "2", "3", "4", "5");
+        fun1($arr1);
     ?>
 
     <span>Задание 2</span>
 
     <?php
-        $stroke = "abgregbatcor";
-        echo str_replace(array("a", "b", "c"),
-                        array("1", "2", "3"), $stroke);
+        $stroke = "HTML, CSS, PHP, BITRIX";
+
+        function fun2($stroke) {
+            $str1 = explode (', ', $stroke);
+            $count = 0;
+            foreach ($str1 as $key2=>$value2) {
+                $count++;
+            }
+            echo "Количество слов в строке = ".$count;
+        }
+        fun2($stroke);
     ?>
 
     <span>Задание 3</span>
 
     <?php
-        $strokeabc = "abc abc abc";
-        echo strrpos($strokeabc, 'b');
+        $stroke2 = "HTML, CSS, PHP, BITRIX";
+
+        function fun3($stroke2) {
+            $str2 = explode(', ', $stroke2);
+            for ($i=0; $i<5; $i++) {
+                $bukv[$i] = str_split($str2[$i]);
+            }
+            $c=0;
+            for ($u=3; $u>=0; $u=$u-1) {
+                foreach ($bukv[$u] as $key4=>$value4) {
+                    $c++;
+                }
+                for ($c; $c>=0; $c=$c-1) {
+                    echo $bukv[$u][$c];
+                }
+            }
+        }
+
+        fun3($stroke2);
+
     ?>
 
     <span>Задание 4</span>
 
     <?php
-        $strokehtml = "html css php";
-        $arrhtml = explode(' ', $strokehtml);
-        print_r($arrhtml);
+        $stroke4 = "HTML, CSS, PHP, BITRIX";
+
+        function fun4($stroke4) {
+            $count4 = strlen($stroke4);
+            echo $count4;
+
+        }
+
+        fun4($stroke4);
     ?>
+
     <span>Задание 5</span>
 
     <?php
-        $date1 = date_create("10-02-2015");
-        $date2 = date_create("11-03-2021");
-        $result = date_diff($date1,$date2);
-        echo "Количество дней между датами -". $result->days;
+    $stroke5 = "HTML, CSS, PHP, BITRIX";
+
+    function fun5($stroke5) {
+        $str5 = explode(', ', $stroke5);
+        for ($x=0; $x<4; $x++) {
+            $bukv5[$x] = str_split($str5[$x]);
+        }
+
+        for ($u=3; $u>=0; $u=$u-1) {
+            for ($c=0; $c<7; $c++) {
+                echo $bukv5[$u][$c]."<br>";
+            }
+        }
+    }
+
+    fun5($stroke5)
     ?>
-</div>
 </body>
 </html>
 
