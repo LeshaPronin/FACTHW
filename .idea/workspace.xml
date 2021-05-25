@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eae9017e-9f4c-4547-9a10-fbf21bc69c25" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8caea112-c7bc-4929-bef7-f965c1e45708" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,12 +13,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -32,7 +26,7 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProjectId" id="1rT3Smo6wYu2qlzg1iSJPHLZjWX" />
+  <component name="ProjectId" id="1rnkwVwR7TbIvBl0RjLF5L57Ram" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,44 +36,35 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\geeka\OneDrive\Рабочий стол\FACTHW" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="eae9017e-9f4c-4547-9a10-fbf21bc69c25" name="Default Changelist" comment="" />
-      <created>1618986254984</created>
+      <changelist id="8caea112-c7bc-4929-bef7-f965c1e45708" name="Default Changelist" comment="" />
+      <created>1619619479731</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1618986254984</updated>
-      <workItem from="1618986256419" duration="15060000" />
-      <workItem from="1619085459969" duration="18432000" />
-      <workItem from="1619186711550" duration="7185000" />
-      <workItem from="1619418752166" duration="2961000" />
-      <workItem from="1619530488297" duration="6000" />
-      <workItem from="1619618466645" duration="1004000" />
+      <updated>1619619479731</updated>
+      <workItem from="1619619480851" duration="7898000" />
+      <workItem from="1619750222166" duration="9220000" />
+      <workItem from="1619777701975" duration="26000" />
+      <workItem from="1619780991124" duration="5276000" />
+      <workItem from="1620190593362" duration="6574000" />
+      <workItem from="1620223808822" duration="6341000" />
+      <workItem from="1620357988040" duration="12991000" />
+      <workItem from="1620375861399" duration="349000" />
+      <workItem from="1620396236929" duration="10006000" />
+      <workItem from="1620922667884" duration="5188000" />
+      <workItem from="1621259961237" duration="1730000" />
+      <workItem from="1621587735132" duration="1711000" />
+      <workItem from="1621928051190" duration="12615000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
