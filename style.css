@@ -15,3 +15,10 @@ span {
     padding: 10px;
     display: block;
 }
+
+.quest {
+    background: #59c2ff;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
